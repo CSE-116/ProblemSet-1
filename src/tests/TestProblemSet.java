@@ -73,6 +73,18 @@ public class TestProblemSet {
 //        assertEquals(4, ProblemSet.longestStringIndex(list));
 //    }
 //
+// @Test
+//     public void testLongestStringIndexWithTies() {
+//         ArrayList<String> list = new ArrayList<>(Arrays.asList("first", "2nd", "third", "4th", "fifth"));
+//         int actual = ProblemSet.longestStringIndex(list);
+//         assertTrue(actual == 0 || actual == 2 || actual == 4);
+
+//         list = new ArrayList<>(Arrays.asList("abc", "def", "excessivelyLongString", "anotherLongStringabcd"));
+//         actual = ProblemSet.longestStringIndex(list);
+//         assertTrue(actual == 2 || actual == 3);
+//     }
+//
+//
 //    @Test
 //    public void testAverage() {
 //        HashMap<ArrayList<Double>, Double> testCases = new HashMap<>();
