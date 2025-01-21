@@ -207,6 +207,9 @@ public class TestProblemSet {
 //        assertTrue(expected.contains(computed));
 //    }
 //
+//    // this method compares two hashmaps and makes sure they're equal.
+//    // You will be writing many of these in upcoming tasks so get used to them,
+//    // as they will be crucial in writing your tests. (And we force you to make them :)
 //    public static void compareHashMaps(HashMap<Integer, Integer> map1, HashMap<Integer, Integer> map2) {
 //        assertEquals(map1.size(), map2.size());
 //        for (int key : map1.keySet()) {
