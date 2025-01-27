@@ -100,7 +100,7 @@ public class TestProblemSet {
 //        for (ArrayList<Double> input : testCases.keySet()) {
 //            double expected = testCases.get(input);
 //            double computed = ProblemSet.average(input);
-//            assertEquals(computed, expected, EPSILON);
+//            assertEquals(expected, computed, EPSILON);
 //        }
 //    }
 //
@@ -215,7 +215,7 @@ public class TestProblemSet {
 //        ArrayList<Integer> input = new ArrayList<>(Arrays.asList(1, 5, 6));
 //        HashMap<Integer, Integer> actual = ProblemSet.squareNumbers(input);
 //        HashMap<Integer, Integer> expected = new HashMap<>(Map.of(1, 1, 5, 25, 6, 36));
-//        compareHashMaps(actual, expected);
+//        compareHashMaps(expected, actual);
 //    }
 //
 //    @Test
@@ -223,7 +223,7 @@ public class TestProblemSet {
 //        ArrayList<Integer> input = new ArrayList<>(Arrays.asList(1, 5, 6, 4, 14, 3, 9, 12));
 //        HashMap<Integer, Integer> actual = ProblemSet.squareNumbers(input);
 //        HashMap<Integer, Integer> expected = new HashMap<>(Map.of(1, 1, 5, 25, 6, 36, 4, 16, 14, 196, 3, 9, 9, 81, 12, 144));
-//        compareHashMaps(actual, expected);
+//        compareHashMaps(expected, actual);
 //    }
 //
 //    @Test
@@ -231,7 +231,7 @@ public class TestProblemSet {
 //        ArrayList<Integer> input = new ArrayList<>(Arrays.asList(1, -2, 0, -4, -8, 8));
 //        HashMap<Integer, Integer> actual = ProblemSet.squareNumbers(input);
 //        HashMap<Integer, Integer> expected = new HashMap<>(Map.of(1, 1, -2, 4, 0, 0, -4, 16, -8, 64, 8, 64));
-//        compareHashMaps(actual, expected);
+//        compareHashMaps(expected, actyal);
 //    }
 //
 //    @Test
