@@ -78,7 +78,7 @@ public class TestProblemSet {
 //         ArrayList<String> list = new ArrayList<>(Arrays.asList("first", "2nd", "third", "4th", "fifth"));
 //         int actual = ProblemSet.longestStringIndex(list);
 //         assertTrue(actual == 0 || actual == 2 || actual == 4);
-
+//
 //         list = new ArrayList<>(Arrays.asList("abc", "def", "excessivelyLongString", "anotherLongStringabcd"));
 //         actual = ProblemSet.longestStringIndex(list);
 //         assertTrue(actual == 2 || actual == 3);
@@ -89,6 +89,9 @@ public class TestProblemSet {
 //    public void testAverage() {
 //        HashMap<ArrayList<Double>, Double> testCases = new HashMap<>();
 //
+//        // Create a hashmap of inputs and their expected output.
+//        // This is a pattern that is continued throughout the tests and is a
+//        // habit you should get into when writing your own tests
 //        testCases.put(new ArrayList<>(Arrays.asList(1.1, 2.0, 3.9)), 2.33333333333);
 //        testCases.put(new ArrayList<>(Arrays.asList(1.0)), 1.0);
 //        testCases.put(new ArrayList<>(Arrays.asList(-1.0, 0.0, 1.0)), 0.0);
@@ -97,15 +100,19 @@ public class TestProblemSet {
 //        testCases.put(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0)), 2.0);
 //        testCases.put(new ArrayList<>(Arrays.asList(-9.9)), -9.9);
 //
+//        // using our hashmap of inputs, we can iterate over it and ensure that the inputs match with the expected outputs
 //        for (ArrayList<Double> input : testCases.keySet()) {
 //            double expected = testCases.get(input);
 //            double computed = ProblemSet.average(input);
-//            assertEquals(expected, computed, EPSILON);
+//            assertEquals(expected + " did not equal " + computed + " on input " + input, expected, computed, EPSILON);
 //        }
 //    }
 //
 //    @Test
 //    public void testFirstNInts() {
+//        // Create a hashmap of inputs and their expected output.
+//        // This is a pattern that is continued throughout the tests and is a
+//        // habit you should get into when writing your own tests
 //        HashMap<Integer, ArrayList<Integer>> testCases = new HashMap<>();
 //        testCases.put(0, new ArrayList<>());
 //        testCases.put(1, new ArrayList<>(Arrays.asList(1)));
@@ -117,10 +124,11 @@ public class TestProblemSet {
 //        testCases.put(-10, new ArrayList<>());
 //        testCases.put(-1162, new ArrayList<>());
 //
+//        // using our hashmap of inputs, we can iterate over it and ensure that the inputs match with the expected outputs
 //        for (int input : testCases.keySet()) {
 //            ArrayList<Integer> expected = testCases.get(input);
 //            ArrayList<Integer> actual = ProblemSet.firstNInts(input);
-//            assertEquals(expected, actual);
+//            assertEquals(actual + " did not equal " + expected + " on input " + input, expected, actual);
 //        }
 //    }
 //
@@ -133,16 +141,21 @@ public class TestProblemSet {
 //
 //    @Test
 //    public void testSumOfDigits2() {
+//        // Create a hashmap of inputs and their expected output.
+//        // This is a pattern that is continued throughout the tests and is a
+//        // habit you should get into when writing your own tests
 //        HashMap<Integer, Integer> testCases = new HashMap<>();
 //        testCases.put(1, 1);
 //        testCases.put(0, 0);
 //        testCases.put(586, 19);
 //        testCases.put(1234567890, 45);
 //        testCases.put(-1234567890, 45);
+//
+//        // using our hashmap of inputs, we can iterate over it and ensure that the inputs match with the expected outputs
 //        for (int input : testCases.keySet()) {
 //            int expected = testCases.get(input);
 //            int returned = ProblemSet.sumOfDigits(input);
-//            assertTrue(returned + " did not equal " + expected, expected == returned);
+//            assertTrue(returned + " did not equal " + expected + " on input " + input, expected == returned);
 //        }
 //    }
 //
@@ -194,6 +207,10 @@ public class TestProblemSet {
 //        assertTrue(expected.contains(computed));
 //    }
 //
+//    // This method compares two hashmaps and makes sure they're equal.
+//    // You will be writing many methods that compare two datastructures in upcoming tasks, so get used to them.
+//    //
+//    // These types of methods (called testing utilities) will be crucial in writing your tests. (And we force you to make them :)
 //    public static void compareHashMaps(HashMap<Integer, Integer> map1, HashMap<Integer, Integer> map2) {
 //        assertEquals(map1.size(), map2.size());
 //        for (int key : map1.keySet()) {
