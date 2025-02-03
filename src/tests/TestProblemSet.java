@@ -248,7 +248,7 @@ public class TestProblemSet {
 //        ArrayList<Integer> input = new ArrayList<>(Arrays.asList(1, -2, 0, -4, -8, 8));
 //        HashMap<Integer, Integer> actual = ProblemSet.squareNumbers(input);
 //        HashMap<Integer, Integer> expected = new HashMap<>(Map.of(1, 1, -2, 4, 0, 0, -4, 16, -8, 64, 8, 64));
-//        compareHashMaps(expected, actyal);
+//        compareHashMaps(expected, actual);
 //    }
 //
 //    @Test
