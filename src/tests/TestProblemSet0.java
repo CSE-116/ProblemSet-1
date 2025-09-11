@@ -33,7 +33,7 @@ public class TestProblemSet0 {
         for (ArrayList<Double> input : testCases.keySet()) {
             double expected = testCases.get(input);
             double computed = ProblemSet0.average(input);
-            assertEquals("Input: " + input, computed, expected, 1e-5);
+            assertEquals("Input: " + input, expected, computed, 1e-5);
         }
     }
 
