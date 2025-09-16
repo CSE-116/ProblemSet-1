@@ -7,9 +7,13 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import problem.*;
+
 import org.junit.Test;
 
 public class TestProblemSet1 {
+
+    private static double EPSILON = 1e-7;
 
     // ----- Uncomment the tests below once you have written all the classes/methods
     // ----- You can uncomment multiple lines by selecting them and pressing ctrl+/
