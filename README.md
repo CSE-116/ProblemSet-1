@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>CSE 116 Problem Set 0</h1>
+  <h1>CSE 116 Problem Set 1</h1>
 </div>
 
 Each Problem Set will have its own repository to clone, as well as its own set of specifications on the course website

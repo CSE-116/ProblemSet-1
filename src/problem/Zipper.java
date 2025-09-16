@@ -28,7 +28,7 @@ public class Zipper {
     /**
      * List of directories that will have their contents compressed.
      */
-    private static String[] sources = { "data", "src" };
+    private static String[] sources = { "src" };
 
     /**
      * Name of the compressed file that will be created. If a file already exists
